@@ -1,0 +1,50 @@
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8]{inputenc} % make weird characters work
+\usepackage{graphicx}
+
+\usepackage[english,serbian]{babel}
+
+
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\usepackage{listings}
+
+
+\begin{document}
+
+\input {Sections/info.tex}
+\maketitle
+
+\input {Sections/abstract.tex}
+
+\tableofcontents
+
+\newpage
+
+\input {Sections/intro.tex}
+
+\input {Sections/analysis.tex}
+
+\input {Sections/use_cases.tex}
+
+
+\section{Zaključak}
+\label{sec:zakljucak}
+
+
+\addcontentsline{toc}{section}{Literatura}
+\appendix
+\bibliography{seminarski} 
+\bibliographystyle{plain}
+
+
+
+
+
+\end{document}
