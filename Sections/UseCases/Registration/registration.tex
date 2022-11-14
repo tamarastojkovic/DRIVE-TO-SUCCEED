@@ -1,8 +1,12 @@
-\subsubsection{Registracija korisnika}
+\subsubsection{Registracija kandidata}
 \label{subsubsec:registracija}
 \begin{itemize}
   \item \textbf{Kratak opis}: Da bi kandidat mogao da se uloguje na svoj nalog i vidi svoje podatke, nepohodno je da dobije potvrdu da je upisan u auto školu, kao i nepohodan ID za logovanje.
-  \item \textbf{Učesnici}:Kandidat, administrator sistema, administrativni radnik.
+  \item \textbf{Učesnici}:
+  \begin{itemize}
+    \item Kandidat
+    \item Administrator sistema
+    \item Administrativni radnik.
   \item \textbf{Preduslovi}:
     \begin{itemize}
     \item  Kandidat je popunio online prijavu.
@@ -26,9 +30,9 @@
 
   \item \textbf{Alternativni tokovi}:
       \begin{itemize}
-        \item A1. textbf{Kandidat nije dobio mejl sa ID-jem za pristupanje svom nalogu.}
-        Administrator sistema zahteva od sistema da ponovo pošalje mejl. Proces se nastavlja u koraku 4. osnovnog toka.
-        \item A2. textbf{Administrativni radnik ne može da kontaktira kadnidata.}
-        Trenutno stanje sistema se pamti i prekida se slučaj upotrebe na neko vreme. Naredni dan se slučaj upotrebe nastavlja ponovnim pozivom kandidata odnosno proces se nastavlja od 6. koraka osnovnog toka.
+        \item A1. \textbf{Kandidat nije dobio mejl sa ID-jem i šifrom za pristupanje svom nalogu.}
+        Ukoliko u koraku 4 kandidat nije dobio mejl, administrator sistema zahteva od sistema da ponovo pošalje mejl. Proces se nastavlja u koraku 4. osnovnog toka.
+        \item A2. \textbf{Administrativni radnik ne može da kontaktira kadnidata.}
+        Ukoliko u koraku 6 administrativni radnik ne može da stupi u kontakt sa kandidatom, trenutno stanje sistema se pamti i prekida se slučaj upotrebe na neko vreme. Naredni dan se slučaj upotrebe nastavlja ponovnim pozivom kandidata odnosno proces se nastavlja od 6. koraka osnovnog toka.
       \end{itemize}
 \end{itemize}
