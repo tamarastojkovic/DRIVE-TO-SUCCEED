@@ -10,7 +10,6 @@
 
 \item \textbf{Učesnici} \newline
    - Kandidat \newline 
-   - Instruktor \newline 
    - Administrativni radnik.
 
 \item \textbf{Preduslovi:} \newline
@@ -22,16 +21,21 @@
 
 \item \textbf{Osnovni tok:}  
    \begin{enumerate}
-   \item Kandidat je dosatvio administrativnom radniku svu neophodnu dokumentaciju.
-   \item Administrativni radnik je validirao ispravnost i potpunost dokumentacije.
-   \item Kandidat bira željenog instruktora.
-   \item Sistem potvrđuje kandidatu prijavu
+   \item Kandidat otvara formular za prijavu za praktičnu obuku.
+   \item Kandidat popunjava formular.
+   \item Kandidat klikom na dugme "Prijavi" salje prijavu.
+   \item Administrativni radnik proverava ispravnost i potpunost dokumentacije.
+   \item Administrativni radnik potvrdjuje prijavu i kandidatu salje spisak slobodnih instruktora.
+   \item Kandidat proverava mejl i bira instruktora.
+   \item Sistem belezi prijavu kandidata i izabranog instruktora.
    \end{enumerate}
 
 \item \textbf{Alternativni tok:}  
    \begin{itemize}
    \item A1. \textbf{Neispravnost ili nepotpunost dokumentacije:}
   Dokumentacija koju je korinik priložio je nepotpuna ili sadrži neke neispravne podatke. Slučaj upotrebe se privremeno zaustavlja dok kandidat ne kompletira potrebnu dokumentaciju ili ispravi prosleđene podatke i proces se nastavlja od koraka 1 u osnovnom toku.
+  \item A2. \textbf{Kandidat nije dobio mejl:}
+  Administrativni radnik nije posalo mejl o potvrdi prijave i spisak slobodnih instruktora kandidatu. proces se nastavlja od koraka 5 u osnovnom toku
    \end{itemize}
 
 \end{itemize}  
