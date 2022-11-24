@@ -22,7 +22,7 @@
 
 \item \textbf{Osnovni tok:}  
    \begin{enumerate}
-   \item Kandidat otvara online formu za prijavu za izlazak na ispit.
+   \item Kandidat otvara online formular za prijavu za izlazak na ispit.
    \item Kandidat bira termin za ispit.
    \item Kandidat se prijavljuje klikom na dugme "Pošalji".
    \item Administrativni radnik proverava da li kandidat ispunjava uslove za izlazak.
@@ -34,11 +34,18 @@
 \item \textbf{Alternativni tok:}  
    \begin{itemize}
    \item A1. \textbf{Nevalidni podaci:}
-  Kandidat ne ispunjava uslove za prijavu na ispit. Proces se prekida dok kandidat ne donese svu neophodnu dokumenatciju.
+  Kandidat ne ispunjava uslove za prijavu na ispit. Proces se prekida dok kandidat ne ispuni sve uslove za izlazak na ispit.
   \item A2. \textbf{Kandidat nije dobio potvrdu za izlazk na ispit:}
   Administrativni radnik nije poslao potvrdu kandidatu. Kandidat obaveštava administrativnog radnika da nije dobio mejl. Proces se nastavlja u koraku 5 osnovnog toka.
-  \item A3. \textbf{Kandidat odustaje od izabranog termina:}
-  Kandidat je iz nekog razloga odustao od izabranog termina i želi da promeni termin. Proces se nastavlja od koraka 1 u osnovnom toku.
    \end{itemize}
 
 \end{itemize}  
+
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[width=140mm, height=70mm]{Diagrams/dijagram_aktivnosti_prijava_za_praktican_ispit.png}
+  \end{center}
+  \caption {Dijagram aktivnosti - Prijava za praktični ispit}
+  \label{activity_prijava_za_prakticni_ispit}
+
+\end{figure}
