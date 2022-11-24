@@ -1,7 +1,8 @@
 \subsubsection{Registracija kandidata}
 \label{subsubsec:registracija}
 \begin{itemize}
-  \item \textbf{Kratak opis}: Da bi kandidat mogao da se uloguje na svoj nalog i vidi svoje podatke, nepohodno je da dobije potvrdu da je upisan u auto školu, kao i nepohodan ID za logovanje.
+  \item \textbf{Kratak opis}: Da bi kandidat mogao da se uloguje na svoj nalog i vidi svoje podatke, 
+  nepohodno je da dobije potvrdu da je upisan u auto školu, kao i nepohodan ID i lozinku za logovanje.
   \item \textbf{Učesnici}:
   \begin{itemize}
     \item Kandidat
@@ -23,19 +24,25 @@
         \item Administrator sistema prima informacije o novom kadnidatu.
         \item Administrator sistema unosi novog korisnika u bazu podataka.
         \item Sistem čuva unete podatke.
-        \item Sistem šalje mejl novom kandidatu sa njegovim ID-jem.
+        \item Sistem šalje mejl novom kandidatu sa potvrdom o registraciji i podacima.
+        \item Kandidat dobija mejl sa potvrdom o registraciji i podacima.
         \item Sistem šalje mejl administrativnom radniku da je uspešno dodao novog kanidata.
-        \item Administrativni radnik poziva kadnidata telefonom i proverava da li je dobio mejl sa svim potrebnim informacijama za prijavljivanje.
+        \item Administrativni radnik prima mejl da je kandidat dodat u bazu.
         \item Administrativni radnik ažurira spisak prijavljenih kandidata dodavanjem novog kadnidata.    
-      \end{enumerate}
+      \end{enumerate} 
 
+      \newpage
   \item \textbf{Alternativni tokovi}:
       \begin{itemize}
         \item A1. \textbf{Kandidat nije dobio mejl sa ID-jem i šifrom za pristupanje svom nalogu.}
-        Ukoliko u koraku 4 kandidat nije dobio mejl, administrator sistema zahteva od sistema da ponovo pošalje mejl. Proces se nastavlja u koraku 4. osnovnog toka.
-        \item A2. \textbf{Administrativni radnik ne može da kontaktira kadnidata.}
-        Ukoliko u koraku 6 administrativni radnik ne može da stupi u kontakt sa kandidatom, trenutno stanje sistema se pamti i prekida se slučaj upotrebe na neko vreme. Naredni dan se slučaj upotrebe nastavlja ponovnim pozivom kandidata odnosno proces se nastavlja od 6. koraka osnovnog toka.
+        Ukoliko u koraku 5 kandidat nije dobio mejl, administrator sistema zahteva od sistema da ponovo pošalje mejl. Proces se nastavlja u koraku 4. osnovnog toka.
+        \item A2. \textbf{Administrativni radnik nije dobio potvrdu o dodavanju novog kandidata.}
+        Ukoliko u koraku 7 administrativni radnik nije dobio potvrdu o dodavanju novog kandidata, mejl mu se ponovo šalje tj. proces se nastavlja od 6. koraka osnovnog toka.
       \end{itemize}
+
+
+  \item \textbf{Dodatne informacije}:\newline
+  Podaci koji se prosleđuju kandidatu putem mejla su njegov ID i lozinka u bazi, kako bi mogao da se uloguje.
 \end{itemize}
 
 \begin{figure}[H]
