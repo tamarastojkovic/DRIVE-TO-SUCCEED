@@ -1,5 +1,9 @@
 \section{Slučajevi upotrebe}
-\label{subsec:podnaslov2}
+\label{sec:podnaslov2}
+U ovoj sekciji su predstavljeni slučajevi upotrebe (3 glavna, i slučajevi u okviru njih)
+Za svaki slučaj upotrebe predstavljen je i odgovarajući dijagram aktivnosti, 
+u okviru sekcije za taj pojedinačni slučaj upotrebe.
+Za svaki glavni slučaj dodat je dijagram tog slučaja upotrebe, kao i odgovarajući BPMN dijagrami.
 \subsection {Podnošenje zahteva za prijavu}
 Proces registracije korisnika u auto školi započinje popunjavanjem online formulara, gde kandidat unosi svoje lične podatke. Administrativni radnik treba da proveri da kadnidat ispunjava potrebne uslove za upis i formira neophodnu dokumentaciju za kandidata. Nakon toga informacije prosleđuje administratoru sistema, koji unosi novog korisnika u bazu i prosleđuje radniku ID i lozinku za trenutnog korisnika. Kada je kandidat prijavljen u auto školu, dobija imejl sa potvrdom o registraciji, svoj ID i lozinku , pa se može ulogovati na svoj nalog. 
 
@@ -13,11 +17,21 @@ Proces registracije korisnika u auto školi započinje popunjavanjem online form
 \end{figure}
 
 
+
 \input {Sections/UseCases/Registration/apply.tex}
 
 \input {Sections/UseCases/Registration/registration.tex}
 
 \input {Sections/UseCases/Registration/groups.tex}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=120mm, height=60mm]{Diagrams/bpmn_podnosenje_zahteva.png}
+    \end{center}
+    \caption {BPMN dijagram procesa podnošenja zahteva za prijavu}
+    \label{bpmn_podnosenje_zahteva}
+
+\end{figure}
 
 
 \subsection {Teorijska nastava}
