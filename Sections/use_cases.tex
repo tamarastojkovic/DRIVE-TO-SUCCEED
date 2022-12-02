@@ -16,7 +16,16 @@ Proces registracije korisnika u auto školi započinje popunjavanjem online form
 
 \end{figure}
 
+Na slici \ref{fig:stanja_kandidat_registracija} je prikazan dijagram stanja kandidata u procesu registracije.
 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=110mm, height=60mm]{Diagrams/dijagram_stanja_registracija.png}
+    \end{center}
+    \caption {Podnošenje zahteva za prijavu: Dijagram stanja}
+    \label{fig:stanja_kandidat_registracija}
+
+\end{figure}
 
 \input {Sections/UseCases/Registration/apply.tex}
 
@@ -24,12 +33,20 @@ Proces registracije korisnika u auto školi započinje popunjavanjem online form
 
 \input {Sections/UseCases/Registration/groups.tex}
 
+Na slici \ref{fig:bpmn_podnosenje_zahteva} je prikazan BPMN dijagram procesa podnošenja zahteva za prijavu u auto školu,
+koji predstavlja sled događaja u sistemu za 3 slučaja upotrebe:
+\begin{itemize}
+    \item Podnošenje prijave
+    \item Registracija kandidata
+    \item Raspoređivanje kandidata u grupu
+\end{itemize}
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=120mm, height=60mm]{Diagrams/bpmn_podnosenje_zahteva.png}
     \end{center}
     \caption {BPMN dijagram procesa podnošenja zahteva za prijavu}
-    \label{bpmn_podnosenje_zahteva}
+    \label{fig:bpmn_podnosenje_zahteva}
 
 \end{figure}
 
@@ -45,6 +62,7 @@ Proces prijave za teorijsku nastavu kandidata, kao i vodjenje evidencije casova 
 
 \subsection {Praktična nastava}
 Proces praktične obuke započinje dostavljanjem auto školi potvrde o obavljenom lekarskom pregledu, koji kandidat mora da obavi. Neophodno je da kandidat odabere jednog od instruktora. Nakon 40 časova vožnje, i dobijene potvrde o položenoj prvoj pomoći, kandidat stiče uslov za prijavu za izlazak na vozački ispit. Kandidat se prijavljuje za ispit u jednom od ponuđenih termina i neophodno je da ima evidentirane potrebne uplate. Ukoliko je položio vozački ispit, pre izdavanja potvrde o položenom ispitu, neophodno je da kandidat popuni anketu o auto školi. Ovo će pomoći novim kandidatima, pre sve pri izboru odgovarajućeg instruktora.
+
 
 \begin{figure}[H]
     \begin{center}
@@ -63,7 +81,9 @@ Proces praktične obuke započinje dostavljanjem auto školi potvrde o obavljeno
 
 \input{Sections/UseCases/Practice/practiceExam.tex}
 
-Na slici \ref{fig:bpmnP_podnosenje_zahteva} je prikazan BPMN dijagram procesa praktične nastave, na slici \ref{fig:bpmnS_podnosenje_zahteva} je prikazan BPMN dijagram saradnje praktične nastave, koji predstavljju sled događaja u sistemu za 4 slučaja upotrebe:
+Na slici \ref{fig:bpmnP_podnosenje_zahteva} je prikazan BPMN dijagram procesa praktične nastave, 
+na slici \ref{fig:bpmnS_podnosenje_zahteva} je prikazan BPMN dijagram saradnje praktične nastave, 
+koji predstavljaju sled događaja u sistemu za 4 slučaja upotrebe:
 \begin{itemize}
     \item Prijava za praktičnu obuku
     \item Pohađanje praktične obuke
@@ -88,6 +108,21 @@ Na slici \ref{fig:bpmnP_podnosenje_zahteva} je prikazan BPMN dijagram procesa pr
     \label{fig:bpmnS_podnosenje_zahteva}
 
 \end{figure}
+
+Kroz rad sistema kandidat prolazi kroz više različitih stanja. Na slici  \label{fig:stanja_kandidat} je prikazan dijagram stanja kanidata, 
+koji obuhvata stanja kroz koja kandidat prolazi u celom procesu obuke (Podnošenje zahteva za prijavu, Teorijska obuka i Praktična obuka).
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=100mm]{Diagrams/dijagram_stanja_kandidata.png}
+    \end{center}
+    \caption {Dijagram stanja kandidata}
+    \label{fig:stanja_kandidat}
+
+\end{figure}
+
+
+
 
 \subsection {Vođenje evidencije}
 Ovde ćemo predstaviti 3 slučaja upotrebe koje obavlja najvećim delom  nadležni za zaposlene i vrši vođenje različitih evidencija.
