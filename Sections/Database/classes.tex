@@ -1,0 +1,40 @@
+\subsection{Podaci o nastavi}
+
+\textbf{\large Nastava}
+\vspace{0.3cm}
+
+Klasa \textit{Nastava} predstavlja osnovne informacije o nastavi u auto školi. Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Praktična nastava i Teorijska nastava.
+
+Atributi:
+\begin{itemize}
+    \item id - jedinstveni identifikator ispita (PK, automatski generisan)
+    \item datumOdržavanja
+    \item vremeOdržavanja
+\end{itemize}
+
+\textbf{\large Teorijska nastava}
+\vspace{0.3cm}
+
+Klasa \textit{Teorijska nastava} predstavlja osnovne informacije vezano za teorijsku nastavu.
+
+Atributi:
+\begin{itemize}
+    \item idPredavača (SK koji referiše na Predavač)
+    \item brojSale
+    \item idGrupe (SK koji referiše na Grupa)
+\end{itemize}
+
+\textbf{\large Praktična nastava}
+\vspace{0.3cm}
+
+Klasa \textit{Praktična nastava} predstavlja osnovne informacije vezano za praktičnu nastavu.
+
+Atributi:
+\begin{itemize}
+    \item idInstruktora (SK koji referiše na Instruktor)
+    \item brojRute
+    \item idKandidata (SK koji referiše na Kandidat)
+    \item nocnaVoznja
+    \item idVozila (SK koji referiše na Vozilo)
+\end{itemize}
+

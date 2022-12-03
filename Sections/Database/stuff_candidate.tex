@@ -1,0 +1,64 @@
+\subsection{Podaci o osoblju i kandidatu}
+
+\textbf{\large Osoba}
+\vspace{0.3cm}
+
+Klasa \textit{Osoba} predstavlja osnovne informacije o korisnicima našeg sistema. Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Osoblje i Kandidat.
+
+Atributi:
+\begin{itemize}
+    \item id - jedinstveni identifikator korisnika (PK, automatski generisan)
+    \item lozinka 
+    \item ime
+    \item prezime
+    \item jmbg
+    \item pol
+    \item telefon
+\end{itemize}
+
+\textbf{\large Osoblje}
+\vspace{0.3cm}
+
+Klasa \textit{Osoblje} zaposlene osobe u našem sistemu. Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Predavač i Instruktor.
+
+Atributi:
+\begin{itemize}
+    \item brojRacuna
+    \item visinaPlate
+    \item datumZaposlenja
+    \item uloga
+    \item radnoVreme
+\end{itemize}
+
+\textbf{\large Kandidat}
+\vspace{0.3cm}
+
+Klasa \textit{Kandidat} predstavlja jednog kandidata koji je upisan u auto školu.
+
+Atributi:
+\begin{itemize}
+    \item datumRođenja
+    \item datumUpisa
+    \item idGrupe (SK koji referiše na Grupa)
+\end{itemize}
+
+\textbf{\large Predavač}
+\vspace{0.3cm}
+
+Klasa \textit{Predavač} predstavlja zaposlenog koji je zadužen da drži časove teorijske nastave.
+
+Atributi:
+\begin{itemize}
+    \item idGrupe (SK koji referiše na Grupa)
+\end{itemize}
+
+\textbf{\large Instruktor}
+\vspace{0.3cm}
+
+Klasa \textit{Instruktork} predstavlja zaposlenog koji je zadužen da drži časove praktične nastave.
+
+Atributi:
+\begin{itemize}
+    \item idVozila (SK koji referiše na Vozilo)
+    \item ocena
+\end{itemize}
