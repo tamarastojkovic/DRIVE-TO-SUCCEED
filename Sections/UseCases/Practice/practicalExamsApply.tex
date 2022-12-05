@@ -23,8 +23,11 @@
 \item \textbf{Osnovni tok:}  
    \begin{enumerate}
    \item Kandidat otvara online formular za prijavu za izlazak na ispit.
+   \item Sistem prikazuje formular.
    \item Kandidat bira termin za ispit.
    \item Kandidat se prijavljuje klikom na dugme "Pošalji".
+   \item Sistem beleži prijavu za praktični ispit.
+   \item Sistem šalje podatke administrativnom radniku.
    \item Administrativni radnik proverava da li kandidat ispunjava uslove za izlazak.
    \item Administrativni radnik šalje mejl kandidatu gde potvrđuje prijavu i dostavlja dodatne informacije.
    \item Kandidat otvara mejl i proverava da li je dobio potvrdu za izlazak na ispit. 
@@ -36,7 +39,7 @@
    \item A1. \textbf{Nevalidni podaci:}
   Kandidat ne ispunjava uslove za prijavu na ispit. Proces se prekida dok kandidat ne ispuni sve uslove za izlazak na ispit.
   \item A2. \textbf{Kandidat nije dobio potvrdu za izlazk na ispit:}
-  Administrativni radnik nije poslao potvrdu kandidatu. Kandidat obaveštava administrativnog radnika da nije dobio mejl. Proces se nastavlja u koraku 5 osnovnog toka.
+  Administrativni radnik nije poslao potvrdu kandidatu. Kandidat obaveštava administrativnog radnika da nije dobio mejl. Proces se nastavlja u koraku 8 osnovnog toka.
    \end{itemize}
 
 \end{itemize}  
