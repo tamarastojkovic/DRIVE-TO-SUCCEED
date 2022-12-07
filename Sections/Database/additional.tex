@@ -8,12 +8,10 @@ Klasa \textit{Vozilo} predstavlja osnovne informacije o stanju vozila
 Atributi:
 \begin{itemize}
     \item id - jedinstveni identifikator ispita (PK, automatski generisan)
-    \item model
     \item registracioniBroj
+    \item model
     \item datumRegistracije
-    \item godinaProizvodnje
-    \item godinaKupovine
-    \item kubikaža
+    \item pređeniKm
 \end{itemize}
 
 \textbf{\large Anketa}
@@ -24,9 +22,8 @@ Klasa \textit{Anketa} predstavlja jednu anketu koju kandidat popunjava unoseći 
 Atributi:
 \begin{itemize}
     \item id (PK, automatski generisan)
-    \item idInstruktora (SK koji referiše na Instruktor)
-    \item idKandidata (SK koji referiše na Kandidat)
-    \item Ocena
+    \item idKandidata - kandidat koji popunjava anketu (SK koji referiše na Kandidat)
+    \item ocena - ocena koju daje instruktoru
 \end{itemize}
 
 \textbf{\large Grupa}
@@ -37,7 +34,19 @@ Klasa \textit{Grupa} predstavlja osnovne informacije o jednoj polaznoj grupi kan
 Atributi:
 \begin{itemize}
     \item id (PK, automatski generisan)
-    \item idPredavača (SK koji referiše na Predavač)
     \item brojKandidata 
+    \item idPredavača - predavač koji je dodeljen grupi (SK koji referiše na Predavač)
 \end{itemize}
+
+Klasa \textit{Uplata} predstavlja podatke o jednoj uplati kandidata, u određenom iznosu, po cenovniku usluga auto škole.
+
+Atributi:
+\begin{itemize}
+    \item id (PK, automatski generisan)
+    \item idRačunovođe - računovođa koji evidentira uplatu (SK koji referiše na Računovođa)
+    \item idKandidata - kandidat koji vrši uplatu u određenom iznosu (SK koji referiše na Kandidat)
+    \item iznos
+    
+\end{itemize}
+
 

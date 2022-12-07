@@ -15,26 +15,22 @@ Atributi:
 \textbf{\large Teorijska nastava}
 \vspace{0.3cm}
 
-Klasa \textit{Teorijska nastava} predstavlja osnovne informacije vezano za teorijsku nastavu.
+Klasa \textit{Teorijska nastava} predstavlja osnovne informacije vezano za konkretan čas teorijske nastave.
 
 Atributi:
 \begin{itemize}
-    \item idPredavača (SK koji referiše na Predavač)
-    \item brojSale
-    \item idGrupe (SK koji referiše na Grupa)
+    \item idGrupe - grupa koja pohađa čas teorijske nastave (SK koji referiše na Grupa)
 \end{itemize}
 
 \textbf{\large Praktična nastava}
 \vspace{0.3cm}
 
-Klasa \textit{Praktična nastava} predstavlja osnovne informacije vezano za praktičnu nastavu.
+Klasa \textit{Praktična nastava} predstavlja osnovne informacije vezano za čas praktične nastave.
 
 Atributi:
 \begin{itemize}
-    \item idInstruktora (SK koji referiše na Instruktor)
+    \item idKandidata -kandidat koji pohađa tekući čas nastave (SK koji referiše na Kandidat)
     \item brojRute
-    \item idKandidata (SK koji referiše na Kandidat)
-    \item nocnaVoznja
-    \item idVozila (SK koji referiše na Vozilo)
+    \item noćnaVožnja
 \end{itemize}
 

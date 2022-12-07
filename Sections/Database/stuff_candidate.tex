@@ -3,7 +3,8 @@
 \textbf{\large Osoba}
 \vspace{0.3cm}
 
-Klasa \textit{Osoba} predstavlja osnovne informacije o korisnicima našeg sistema. Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Osoblje i Kandidat.
+Klasa \textit{Osoba} predstavlja osnovne informacije o korisnicima našeg sistema. 
+Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Osoblje i Kandidat.
 
 Atributi:
 \begin{itemize}
@@ -19,15 +20,15 @@ Atributi:
 \textbf{\large Osoblje}
 \vspace{0.3cm}
 
-Klasa \textit{Osoblje} zaposlene osobe u našem sistemu. Iz ovog tipa entiteta primenom specijalizacije izvodimo 2 nova tipa entiteta: Predavač i Instruktor.
+Klasa \textit{Osoblje} predstavlja zaposlene osobe u našem sistemu.
+Iz ovog tipa entiteta primenom specijalizacije izvodimo 6 novih tipova entiteta: 
+Predavač, Instruktor, Nadležni za zaposlene, Računovođa, Administrativni radnik i Administrator sistema.
 
 Atributi:
 \begin{itemize}
-    \item brojRacuna
+    \item brojRačuna
     \item visinaPlate
     \item datumZaposlenja
-    \item uloga
-    \item radnoVreme
 \end{itemize}
 
 \textbf{\large Kandidat}
@@ -39,26 +40,18 @@ Atributi:
 \begin{itemize}
     \item datumRođenja
     \item datumUpisa
-    \item idGrupe (SK koji referiše na Grupa)
+    \item idInstruktora - instruktor koji drži kandidatu časove vožnje (SK koji referiše na Instruktor)
+    \item idGrupe - grupa u koju je kandidat raspoređen (SK koji referiše na Grupa)
 \end{itemize}
 
-\textbf{\large Predavač}
-\vspace{0.3cm}
-
-Klasa \textit{Predavač} predstavlja zaposlenog koji je zadužen da drži časove teorijske nastave.
-
-Atributi:
-\begin{itemize}
-    \item idGrupe (SK koji referiše na Grupa)
-\end{itemize}
 
 \textbf{\large Instruktor}
 \vspace{0.3cm}
 
-Klasa \textit{Instruktork} predstavlja zaposlenog koji je zadužen da drži časove praktične nastave.
+Klasa \textit{Instruktor} predstavlja zaposlenog koji je zadužen da drži časove praktične nastave.
 
 Atributi:
 \begin{itemize}
-    \item idVozila (SK koji referiše na Vozilo)
-    \item ocena
+    \item idVozila - vozilo koje je dodeljeno instruktoru (SK koji referiše na Vozilo)
+    \item ocena - trenutna ocena za instruktora na osnovu rezultata ankete
 \end{itemize}
