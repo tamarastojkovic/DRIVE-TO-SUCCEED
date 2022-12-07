@@ -22,7 +22,8 @@
         \item Sistem prikazuje trenutni vozni park i informacije koji instruktor upravlja vozilom.
         \item Nadležni pritiska dugme "Izmeni"  na stranici.
         \item Sistem omogućava organizatoru da izmeni podatke u tabeli ili doda nove.
-        \item Nadležni potvrđuje izmene.
+        \item Nadležni za zaposlene unosi izmene.
+        \item Nadležni za zaposlene potvrđuje izmene.
         \item Sistem evidentira izmene.
         \item Sistem šalje mejl o izmenama instruktorima ako je došlo do novog rasporeda.
       \end{enumerate}
@@ -30,8 +31,8 @@
   \item \textbf{Alternativni tokovi}:
       \begin{itemize}
         \item A1. \textbf{Neuspela validacija.}
-        Ukoliko u koraku 4 nadležni u formu o izmenama unese nevalidne podatke polja formulara koja su neispravna će biti crvena.
-        Nakon što nadležni ažurira podatke nastavlja se čuvanje izmena. Proces se nastavlja u koraku 5.
+        Ukoliko u koraku 5 nadležni u formu o izmenama unese nevalidne podatke polja formulara koja su neispravna će biti crvena.
+        Nakon što nadležni ažurira podatke nastavlja se čuvanje izmena. Proces se nastavlja u koraku 6.
       \end{itemize}
       
   \item \textbf{Dodatne informacije}:
@@ -39,3 +40,12 @@
         \item Id auta, marka, reg broj, insturktor, kilometraža. 
       \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[width=140mm, height=70mm]{Diagrams/evidencija_vozila.png}
+  \end{center}
+  \caption {Dijagram aktivnosti - Formiranje evidencija voznog parka}
+  \label{activity_evidencija_vozila}
+
+\end{figure}
