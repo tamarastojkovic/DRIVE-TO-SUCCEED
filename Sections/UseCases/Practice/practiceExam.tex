@@ -25,24 +25,42 @@
    \item Sistem prikazuje instruktoru putanju vožnje za tog kandidata.
    \item Instruktor saopštava putanju kandidatu.
    \item Kandidat vozi po datoj putanji.
-   \item Instruktor saopštava broj poena.
-   \item Kandidat uspešno završava vozački ispit.
-   \item Instruktor potvrđuje položen ispit u sistemu.
-   \item Sistem šalje kandidatu anketu.
-   \item Kandidat popunjava anketu.
-   \item Sistem čuva podatke iz ankete.
-   \item Administrativni radnik šalje kandidatu potvrdu o položenom vozačkom ispitu.
-   \item Kandidat ulazi na mejl i proverava potvrdu o položenom vozačkom ispitu.
+   \item Kandidat završava ispit.
+   \item Instruktor saopštava rezultate ispita.
+   \begin{enumerate}
+       \item Ukoliko je kandidat položio ispit, izvršava se podtok P1.
+       \item Ukoliko kandidat nije položio ispit, izvršava se podtok P2.
+   \end{enumerate}
    \item Sistem ažurira podatke o kandidatu.     
 
    \end{enumerate}
 
+\item \textbf{Podtokovi:}   
+ \begin{itemize}
+   \item P1. \textbf{Kandidat je položio ispit:}
+   \begin{enumerate}
+       \item Instruktor unosi podatke o ispitu u sistem.
+       \item Instruktor potvrđuje položen ispit u sistemu.
+       \item Sistem čuva podatke o ispitu.
+       \item Sistem šalje kandidatu anketu.
+       \item Kandidat popunjava anketu.
+       \item Sistem čuva podatke iz ankete.
+       \item Administrativni radnik šalje kandidatu potvrdu o položenom vozačkom ispitu.
+       \item Kandidat ulazi na mejl i proverava potvrdu o položenom vozačkom ispitu.
+   \end{enumerate}
+   \item P2. \textbf{Kandidat nije položio ispit:}
+   \begin{enumerate}
+       \item Instruktor unosi podatke o ispitu u sistem.
+       \item Sistem čuva podatke o ispitu.
+       \item Proces se prekida dok se kandidat opet ne prijavi za polaganje prakticnog ispita.
+   \end{enumerate}
+  
+   \end{itemize}
+
 \item \textbf{Alternativni tok:}  
-   \begin{itemize}
-   \item A1. \textbf{Kandidat nije položio praktični ispit:}
-  Kandidat ima manje od 90 poena i nije polozio prakticni ispit. Proces se prekida dok se kandidat opet ne prijavi za polaganje prakticnog ispita. 
-  \item A2. \textbf{Kandidat nije dobio potvrdu o položenom ispitu:}
-  Administrativni radnik nije poslao potvrdu kandidatu. Kandidat obaveštava administrativnog radnika da nije dobio mejl. Proces se nastavlja u koraku 11 osnovnog toka.
+   \begin{itemize} 
+     \item A1. \textbf{Kandidat nije dobio potvrdu o položenom ispitu:}
+     Administrativni radnik nije poslao potvrdu kandidatu. Kandidat obaveštava administrativnog radnika da nije dobio mejl. Proces se nastavlja u koraku 7 podtoka P1.
    \end{itemize}
 
 \end{itemize}  
