@@ -4,19 +4,23 @@
   \item \textbf{Kratak opis}: Da bi kandidat bio raspoređen u grupu neophodno je da odabere neku od ponuđenih grupa, nakon logovanja na svoj nalog. 
   \item \textbf{Učesnici}: 
     \begin{itemize}
-    \item  Kandidat
+    \item  Kandidat - korisnik sistema koji bira grupu za teorijsku nastavu.
     \end{itemize}
   \item \textbf{Preduslovi}:
     \begin{itemize}
     \item Kandidat je dobio svoj ID i lozinku na mejl.
+    \item Kandidat ima pristup internetu.
+    \item Sistem je u funkciji.
     \end{itemize}
   \item \textbf{Postuslovi}:
       \begin{itemize}
       \item Kandidat je raspoređen u neku grupu.
       \end{itemize}
-  \item \textbf{Osnovni tok}:
+  
+     
+  \item \textbf{Osnovni tok}: 
       \begin{enumerate}
-        \item Kandidat se prijavljuje sa svojim ID-jem i šifrom na nalog.
+        \item Kandidat se prijavljuje na nalog.
         \item Kandidat klikom na dugme “Grupe” bira neku od ponuđenih grupa.
         \item Sistem šalje mejl kandidatu da je uspešno raspoređen u grupu i raspored održavanja časova.
         \item Kandidat dobija mejl sa podacima o grupi i rasporedu nastave.
@@ -29,13 +33,19 @@
         \item A2. \textbf{Kandidat nije dobio mejl o raspoređivanju po grupama.}
         Kandidat nije raspoređen u željenu grupu, jer nije dobio mejl sa potvrdom u koraku 4, možda jer je vreme za prijavu isteklo (neko drugi je odabrao preostalo mesto). Proces se nastavlja od koraka 1. osnovnog toka.
       \end{itemize}
+
+
+  \item \textbf{Specijalni zahtevi}:\newline
+      Podaci koji su potrebni kako bi kandidat mogao da se uloguje su ID i lozinka u bazi.
 \end{itemize}
+
+  
 
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=140mm, height=70mm]{Diagrams/dijagram_aktivnosti_grupe.png}
   \end{center}
-  \caption {Dijagram aktivnosti - Reaspoređivanje kandidata u grupu}
+  \caption {Dijagram aktivnosti - Raspoređivanje kandidata u grupu}
   \label{activity_grupe}
 
 \end{figure}
