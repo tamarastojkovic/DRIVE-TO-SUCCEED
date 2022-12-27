@@ -12,6 +12,7 @@ Atributi:
     \item model
     \item datumRegistracije
     \item pređeniKm
+    \item kubikaža
 \end{itemize}
 
 \textbf{\large Anketa}
@@ -36,6 +37,7 @@ Atributi:
     \item id (PK, automatski generisan)
     \item brojKandidata 
     \item idPredavača - predavač koji je dodeljen grupi (SK koji referiše na Predavač)
+    \item početakNastave
 \end{itemize}
 
 Klasa \textit{Uplata} predstavlja podatke o jednoj uplati kandidata, u određenom iznosu, po cenovniku usluga auto škole.
@@ -46,6 +48,8 @@ Atributi:
     \item idRačunovođe - računovođa koji evidentira uplatu (SK koji referiše na Računovođa)
     \item idKandidata - kandidat koji vrši uplatu u određenom iznosu (SK koji referiše na Kandidat)
     \item iznos
+    \item datumUplate
+    \item svrhaUplate
     
 \end{itemize}
 
